@@ -40,7 +40,7 @@ describe('i18n-lint reporters json', function() {
     expect(actual).to.equal(expected);
 
     // Test that valid json is output
-    expect(JSON.stringify.bind(JSON, actual)).not.to.throw.error;
+    expect(JSON.stringify.bind(JSON, actual)).to.not.throw();
 
     done();
   });

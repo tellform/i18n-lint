@@ -227,7 +227,7 @@ describe('i18n-lint bin', function() {
     exec(command, function(err, stdout, stderr) {
 
       // xargs exit code if invocation fails
-      assert.equal(err.code, 123);
+      assert.equal(err.code, 1);
 
       assert.equal(stdout.match(/\^ Hardcoded/g).length, 13);
 
